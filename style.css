@@ -1,84 +1,79 @@
-body, html {
+body {
   margin: 0;
-  padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #000;
+  background-color: black;
   color: white;
   overflow-x: hidden;
 }
+
 canvas#bg {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
   z-index: -1;
 }
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
 .navbar {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  background: rgba(0,0,0,0.6);
-  padding: 15px;
   position: sticky;
   top: 0;
-}
-.navbar button {
   background: #111;
-  color: #00ffff;
-  border: 1px solid #00ffff;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  z-index: 100;
+}
+
+.navbar button {
+  background: #222;
+  color: white;
+  border: none;
   padding: 10px 20px;
-  border-radius: 6px;
   cursor: pointer;
+  border-radius: 5px;
 }
-main {
-  padding: 60px 20px;
-  max-width: 850px;
-  margin: auto;
+
+.navbar button:hover {
+  background: #444;
 }
+
 .profile-pic {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  border: 3px solid #00ffff;
-  display: block;
-  margin: 0 auto 20px;
 }
+
 .project-img {
-  width: 100%;
+  width: 200px;
   border-radius: 10px;
   margin-bottom: 10px;
 }
+
 .project, .service {
-  background: rgba(255,255,255,0.05);
-  padding: 15px;
-  margin-bottom: 20px;
-  border-left: 4px solid #00ffff;
-  border-radius: 6px;
+  margin: 30px auto;
+  max-width: 500px;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
 }
-h1, h2, h3 {
-  text-align: center;
-  color: #00ffff;
-}
-.desc, .dob {
-  text-align: center;
-}
-ul {
-  margin-left: 20px;
-}
-.whatsapp-business {
+
+.whatsapp, .email-button {
   display: inline-block;
-  background: #25d366;
-  color: white;
-  padding: 10px 25px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-}
-.email-button {
-  background: #d44638;
+  margin: 10px;
+  background: #25D366;
   color: white;
   padding: 10px 20px;
-  border-radius: 8px;
   text-decoration: none;
+  border-radius: 5px;
   font-weight: bold;
+}
+
+.email-button {
+  background: #d44638;
 }
